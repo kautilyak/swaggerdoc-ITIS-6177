@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Buy Crypto",
+      "author": "Kumar"
+    },
+    {
+      "title": "test",
+      "author": "not me",
+      "id": 9
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "title": "test",
+      "author": "not meeeee",
+      "id": 20
+    },
+    {
+      "title": "test",
+      "author": "not meeeee",
+      "id": 21
+    },
+    {
+      "title": "Another titlleee",
+      "author": "not me",
+      "id": 22
+    },
+    {
+      "title": "Another titlleee",
+      "author": "not me",
+      "id": 23
+    },
+    {
+      "title": "Another titlleee",
+      "author": "not me",
+      "id": 24
+    },
+    {
+      "title": "Another titlleee",
+      "author": "not m22e",
+      "id": 25
+    },
+    {
+      "title": "Another titlleee",
+      "author": "not111 me",
+      "id": 26
+    },
+    {
+      "title": "Anothqw2er titlleee",
+      "author": "not me",
+      "id": 27
+    },
+    {
+      "id": 28,
+      "title": "Sell Bitcoin",
+      "author": "asd.K"
+    },
+    {
+      "id": 29,
+      "title": "ASdasd Bitcoin",
+      "author": "asd.K"
+    },
+    {
+      "id": 39,
+      "title": "ASdasd Bitcoin",
+      "author": "asd.K"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

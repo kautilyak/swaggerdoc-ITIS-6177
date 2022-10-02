@@ -1,0 +1,188 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Swagger Posts API ITIS-6177",
+      "version": "v2"
+    },
+    "host": "localhost:3001/",
+    "paths": {
+      "/posts": {
+        "get": {
+            "summary": "Show all posts",
+            "produces": [
+            "application/json"
+         ],
+        "responses": {
+        "200": {
+            "description": "200 203 response"
+            }
+        }
+      },
+      "post": {
+        "summary": "Send a post",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+            {
+                "name": "body",
+                "in": "body",
+                "description": "Post Object",
+                "required": true,
+                "schema": {
+                    "$ref": "#/definitions/Post"
+                }
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "200 203 response"
+                }
+            }
+      },
+      "delete": {
+        "summary": "Delete a post",
+        "description": "Delete a Post",
+        "consumes": ["application/json"],
+        "produces": ["plain/text"],
+        "parameters": [
+            {
+                "name": "body",
+                "in": "body",
+                "description": "Post data",
+                "required": true,
+                "schema": {
+                    "$ref": "#/definitions/DeletePost"
+                }
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "All Ok!"
+                },
+            
+            "400": {
+                "description": "Bad Request, pelase check input"
+            },
+
+            "404": {
+                "description": "No such ID"
+            }
+            }
+    },
+    "put": {
+        "summary": "Update a post",
+        "description": "Update a Post",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+            {
+                "name": "body",
+                "in": "body",
+                "description": "Post data",
+                "required": true,
+                "schema": {
+                    "$ref": "#/definitions/Post"
+                }
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "All Ok!"
+                },
+            
+            "400": {
+                "description": "Bad Request, pelase check input"
+            },
+
+            "404": {
+                "description": "No such ID"
+            }
+            }
+    },
+    "patch": {
+        "summary": "Update a specific field in a post",
+        "description": "Update a specific field in a post",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+            {
+                "name": "id",
+                "in": "query",
+                "description": "ID to update",
+                "required": true
+            },
+            {
+                "name": "fields to update",
+                "in": "body",
+                "description": "Update json body",
+                "required": true,
+                "schema": {
+                    "$ref": "#/definitions/PatchPost"
+                }
+            }
+        ],
+        "responses": {
+            "200": {
+                "description": "All Ok!"
+                },
+            
+            "400": {
+                "description": "Bad Request, pelase check input"
+            },
+
+            "404": {
+                "description": "No such ID"
+            }
+            }
+    }
+    },
+    
+    "consumes": [
+      "application/json"
+    ]
+  },
+
+  "definitions": {
+    "Post": {
+        "type": "object",
+        "required": ["title", "author"],
+        "properties": {
+            "id": {
+                "type": "integer",
+                "format": "int64" 
+            },
+
+            "title": {
+                "type": "string",
+                "example": "Buy Bitcoin"
+
+            },
+
+            "author": {
+                "type": "string",
+                "example": "Kautilya .K"
+            }
+        }
+    },
+    "DeletePost": {
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+            "id": {
+                "type": "integer",
+                "format": "int64" 
+            }
+        }
+    },
+    "PatchPost": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "example": "Buy Crypto"
+
+            }
+        }
+    }
+  }
+}
