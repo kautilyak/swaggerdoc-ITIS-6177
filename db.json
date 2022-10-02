@@ -11,12 +11,6 @@
       "id": 9
     },
     {
-      "id": 18
-    },
-    {
-      "id": 19
-    },
-    {
       "title": "test",
       "author": "not meeeee",
       "id": 20
@@ -37,14 +31,9 @@
       "id": 23
     },
     {
-      "title": "Another titlleee",
-      "author": "not me",
-      "id": 24
-    },
-    {
-      "title": "Another titlleee",
-      "author": "not m22e",
-      "id": 25
+      "id": 24,
+      "title": "New title",
+      "author": "Another person"
     },
     {
       "title": "Another titlleee",
@@ -63,13 +52,18 @@
     },
     {
       "id": 29,
-      "title": "ASdasd Bitcoin",
+      "title": "Brand new title again",
       "author": "asd.K"
     },
     {
       "id": 39,
       "title": "ASdasd Bitcoin",
       "author": "asd.K"
+    },
+    {
+      "id": 40,
+      "title": "Leaning Swagger!",
+      "author": "Kautilya .K"
     }
   ],
   "comments": [

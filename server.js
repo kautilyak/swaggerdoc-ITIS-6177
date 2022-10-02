@@ -35,7 +35,7 @@ app.get('/posts', (req, res) => {
  app.post('/posts', (req, res) => {
     id = req.body.id;
 
-    axios.get(`http://localhost:3000/posts/${id}`)
+    axios.get(`http://localhost:3001/posts/${id}`)
         .then(function(data) {
             res.status(400);
             res.send("ID already present!")
